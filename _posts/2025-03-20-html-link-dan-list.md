@@ -1,6 +1,6 @@
 ---
-layout : post
-title :"HTML link dan lists"
+layout: post
+title: "HTML link dan lists"
 ---
 
 berikut adalah penjelasan tentang link dan lists pada html.
