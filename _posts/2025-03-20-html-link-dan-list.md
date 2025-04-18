@@ -1,16 +1,56 @@
 ---
 layout: post
-title: "HTML link dan lists"
+title: "HTML: Link dan List"
+date: 2025-03-20
 ---
 
-berikut adalah penjelasan tentang link dan lists pada html.
-Dalam konteks HTML, link dan list merujuk pada dua elemen penting yang digunakan untuk membangun struktur halaman web. Berikut adalah penjelasan singkat tentang keduanya:
+Materi tentang link dan lists pada HTML
 
-1. Link (Tautan) dalam HTML
-    Link dalam HTML adalah elemen yang memungkinkan pengguna untuk menavigasi antara halaman web atau menuju ke bagian tertentu dalam halaman yang sama. Link dibuat menggunakan tag <a>, yang merupakan singkatan dari "anchor".
-    Tujuan Link: Untuk mengarahkan pengguna ke URL lain, bisa berupa halaman lain di web atau ke bagian tertentu di halaman yang sama.
-    
-2. List (Daftar) dalam HTML
-    List dalam HTML digunakan untuk menampilkan data dalam bentuk daftar, baik terurut (dengan urutan tertentu) maupun tidak terurut (tanpa urutan). Ada tiga jenis utama daftar dalam HTML:
-    Unordered List (Daftar Tidak Terurut): Digunakan untuk menampilkan item tanpa urutan tertentu. Dibuat dengan tag <ul> dan item dalam daftar menggunakan tag <li>.
-    
+# Link dan List dalam HTML 🔗
+
+HTML adalah bahasa dasar yang digunakan untuk membuat website, dan di dalamnya terdapat elemen-elemen seperti **link** dan **list** yang sangat berguna.
+
+## Tautan (Link) 🖇️:
+
+Tautan digunakan untuk menghubungkan halaman-halaman di dalam website atau bahkan ke situs luar. Berikut cara membuat tautan di HTML:
+
+```html
+<a href="https://www.google.com" target="_blank">Klik di sini untuk Google</a>
+```
+
+- **`target="_blank"`** akan membuka tautan di tab baru.
+
+## Daftar (List) 📜:
+
+HTML juga memungkinkan kamu untuk membuat daftar, baik berurutan maupun tidak berurutan.
+
+- **Daftar Tidak Berurutan** (bullets):
+
+  ```html
+  <ul>
+    <li>Item pertama</li>
+    <li>Item kedua</li>
+    <li>Item ketiga</li>
+  </ul>
+  ```
+
+- **Daftar Berurutan** (nomor):
+  ```html
+  <ol>
+    <li>Langkah pertama</li>
+    <li>Langkah kedua</li>
+    <li>Langkah ketiga</li>
+  </ol>
+  ```
+
+## Menambahkan Tautan ke Daftar:
+
+Kamu bisa juga menambahkan tautan di dalam daftar untuk membuat menu atau daftar isi.
+
+```html
+<ul>
+  <li><a href="#section1">Bagian 1</a></li>
+  <li><a href="#section2">Bagian 2</a></li>
+  <li><a href="#section3">Bagian 3</a></li>
+</ul>
+```

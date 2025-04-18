@@ -1,8 +1,162 @@
-.current {
-    color : yellow;
+/* === Global Styling for Balqis Website === */
 
+body {
+  background-color: #fff0f5; /* soft pink background */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #4a154b; /* deep purple-pink */
+  margin: 0;
+  padding: 0;
 }
 
-.last_name {
-    color : pink;
+h1,
+h2,
+h3 {
+  color: #c71585; /* medium violet red */
+}
+
+nav.navbar {
+  background-color: #ffe4ec;
+  padding: 1em 2em;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-links a {
+  margin: 0 1em;
+  text-decoration: none;
+  color: #c71585;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.current {
+  color: #8b008b; /* darker purple */
+  border-bottom: 2px solid #c71585;
+}
+
+.footer {
+  text-align: center;
+  background-color: #ffe4ec;
+  padding: 1.5em;
+  font-size: 0.9em;
+  color: #4a154b;
+}
+
+.footer i {
+  color: #c71585;
+  margin: 0 0.3em;
+}
+
+.footer a.social-icon {
+  color: #4a154b;
+  margin-left: 0.5em;
+  transition: color 0.3s;
+}
+
+.footer a.social-icon:hover {
+  color: #c71585;
+}
+
+/* Home & Friends Styling */
+.friends-container,
+section {
+  margin: 2em auto;
+  padding: 1em 2em;
+  max-width: 800px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(199, 21, 133, 0.1);
+}
+
+.friend-list li {
+  list-style: "🌸 ";
+  margin: 0.5em 0;
+}
+
+.friend-list a {
+  text-decoration: none;
+  color: #8b008b;
+  transition: color 0.3s;
+}
+
+.friend-list a:hover {
+  color: #c71585;
+}
+
+/* Blog Page Styling */
+.blog-list {
+  max-width: 800px;
+  margin: 2em auto;
+  padding: 1em;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(199, 21, 133, 0.1);
+}
+
+.blog-list li {
+  margin: 1em 0;
+}
+
+.blog-list a {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #4a154b;
+  text-decoration: none;
+}
+
+.blog-list a:hover {
+  color: #c71585;
+}
+
+/* Blog Post Styling */
+.post-container {
+  max-width: 800px;
+  margin: 2em auto;
+  padding: 2em;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(199, 21, 133, 0.1);
+}
+
+.post-container h1 {
+  color: #c71585;
+  margin-bottom: 0.2em;
+}
+
+.post-container p {
+  color: #4a154b;
+  line-height: 1.6;
+  margin-bottom: 1em;
+}
+
+.post-container .date-author {
+  font-style: italic;
+  font-size: 0.9em;
+  color: #8b008b;
+  margin-bottom: 1em;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links a {
+    display: block;
+    margin: 0.5em 0;
+  }
+
+  .post-container,
+  .blog-list,
+  .friends-container,
+  section {
+    padding: 1em;
+  }
 }
