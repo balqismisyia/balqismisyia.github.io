@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>config.yml</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+  <div class="nav-container">
+
+    <div class="nav-links">
+      
+        <a href="/" >
+          Home
+        </a>
+      
+        <a href="/friends.html" >
+          Friends
+        </a>
+      
+        <a href="/blog.html" >
+          Blog
+        </a>
+      
+    </div>
+  </div>
+</nav>
+ <h1>config.yml</h1>
+<p>18 Apr 2025 - </p>
+
+<p>penjelasan tentang config.yml</p>
+
+<h3 id="apa-itu-folder-config">Apa Itu Folder config?</h3>
+<p>File _config.yml dalam Jekyll adalah file konfigurasi utama yang digunakan untuk mengontrol berbagai pengaturan dan perilaku situs web yang sedang dibangun. File ini ditulis dalam format YAML dan berisi berbagai opsi konfigurasi yang mengatur bagaimana Jekyll memproses situs web, termasuk tema, plugin, dan pengaturan lain.</p>
+
+<ul>
+  <li>Konfigurasi Global:
+_config.yml menentukan opsi konfigurasi yang berlaku secara global untuk seluruh situs web. Ini berarti pengaturan dalam file ini dapat diakses dan digunakan di setiap halaman situs Anda.</li>
+  <li>Pengaturan Utama:
+File ini digunakan untuk mengatur berbagai aspek situs web, seperti:
+    <ul>
+      <li>Tema: Menentukan tema yang akan digunakan untuk menentukan tampilan dan gaya situs web.</li>
+      <li>Plugin: Mengaktifkan atau menonaktifkan plugin yang memperluas fungsionalitas Jekyll.</li>
+      <li>Penyorot Kode: Menentukan bagaimana kode akan disorot dalam blok kode di situs web.</li>
+      <li>Penanganan Kesalahan: Mengatur cara Jekyll menangani kesalahan atau pesan diagnostik.</li>
+      <li>Pengaturan yang Dapat Digunakan Kembali:
+Nilai yang diatur dalam _config.yml dapat digunakan kembali di seluruh situs web Anda. Misalnya, judul situs yang ditentukan dalam _config.yml dapat digunakan di templat untuk menambahkan judul ke setiap halaman.</li>
+    </ul>
+  </li>
+  <li>Contoh:
+Kode
+  # _config.yml
+  title: My Awesome Blog
+  description: A simple blog built with Jekyll
+  url: “https://example.com”
+  theme: jekyll-theme-minimal</li>
+  <li>GitHub Pages:
+Dalam konteks GitHub Pages, _config.yml juga digunakan untuk menentukan berbagai opsi konfigurasi situs web yang di-host di GitHub.</li>
+  <li>Modifikasi:
+Anda dapat memodifikasi _config.yml untuk menyesuaikan situs web Anda, seperti mengubah tema, mengaktifkan plugin, atau menyesuaikan perilaku Jekyll.</li>
+</ul>
+
+<p>Folder config pada sebuah web biasanya berfungsi untuk menyimpan semua file konfigurasi yang diperlukan agar aplikasi web bisa berjalan dengan benar dan konsisten. Lebih detailnya, fungsinya bisa meliputi:</p>
+
+<h3 id="1pemisahan-setting-dari-kode-utama">1.Pemisahan Setting dari Kode Utama</h3>
+
+<p>Setting seperti database, API key, nama aplikasi, port server, dan sebagainya dipisahkan ke file di folder config, supaya lebih rapi dan tidak bercampur dengan logika aplikasi.</p>
+
+<h3 id="2memudahkan-perubahan-setting">2.Memudahkan Perubahan Setting</h3>
+
+<p>Kalau perlu ganti database, API key, URL server, atau mode dari development ke production, kamu cukup ubah di satu tempat (file di config) tanpa harus cari-cari di banyak file.</p>
+
+<h3 id="3keamanan">3.Keamanan</h3>
+
+<p>Informasi sensitif seperti password database atau API credentials bisa dikelola lebih aman di file konfigurasi, dan biasanya file itu juga diatur supaya tidak ikut ke version control (misal dengan .gitignore).</p>
+
+<h3 id="4mendukung-multi-environment">4.Mendukung Multi-Environment</h3>
+
+<p>Web kadang jalan di banyak lingkungan (local, staging, production). Folder config bisa berisi setting yang berbeda tergantung lingkungan, misal config/dev.js, config/prod.js, atau config/database.php, dll.</p>
+
+<h3 id="5meningkatkan-skalabilitas">5.Meningkatkan Skalabilitas</h3>
+
+<p>Saat proyek makin besar, butuh banyak pengaturan tambahan (caching, queue, services, dll). Dengan adanya folder config, semuanya tetap tertata dan gampang dikelola.</p>
+
+<p>Kenapa Harus Ada Folder config?</p>
+
+<p>Alasan	Penjelasan Singkat</p>
+<ul>
+  <li>Keteraturan	Memisahkan logika program dari pengaturan teknis.</li>
+  <li>Kemudahan Update	Mau ganti database atau API? Tinggal ubah file di config, nggak perlu ubah seluruh kode.</li>
+  <li>Dukungan Multi-Environment	Bisa punya setting khusus untuk dev, staging, dan production.</li>
+  <li>Keamanan	Data sensitif (seperti API Key) disimpan rapi dan bisa dikunci.</li>
+  <li>Keterbukaan Tim	Developer lain mudah paham cara kerja aplikasi hanya dengan lihat file config.</li>
+</ul>
+
+ <div class="footer">
+  <p>
+    © 2025, Created <i class="fas fa-heart"></i> by <span>Balqis </span>
+    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+    <a href="https://github.com/balqismisyia" class="social-icon"
+      ><i class="fab fa-github"></i
+    ></a>
+  </p>
+</div>
+
+  </body>
+</html>

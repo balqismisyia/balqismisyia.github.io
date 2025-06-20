@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fromspree</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+  <div class="nav-container">
+
+    <div class="nav-links">
+      
+        <a href="/" >
+          Home
+        </a>
+      
+        <a href="/friends.html" >
+          Friends
+        </a>
+      
+        <a href="/blog.html" >
+          Blog
+        </a>
+      
+    </div>
+  </div>
+</nav>
+ <h1>Fromspree</h1>
+<p>01 Apr 2025 - </p>
+
+<p>penjelasan tentang Formspree</p>
+
+<p>Formspree adalah layanan yang memungkinkan Anda untuk menghubungkan formulir HTML sederhana ke email tanpa perlu menulis kode backend. Dengan Formspree, Anda dapat mengirim data formulir langsung ke alamat email Anda tanpa memerlukan server tambahan atau layanan pengelolaan email yang kompleks. Layanan ini sangat populer untuk proyek kecil, situs portofolio, atau halaman kontak sederhana.</p>
+
+<hr />
+
+<h3 id="1-memulai-dengan-formspree"><em>1. Memulai dengan Formspree</em></h3>
+
+<h4 id="11-membuat-formulir-html"><em>1.1. Membuat Formulir HTML</em></h4>
+
+<p>Untuk menggunakan Formspree, langkah pertama adalah membuat formulir HTML biasa. Contoh formulir dasar:</p>
+
+<p>html</p>
+<form action="https://formspree.io/f/{your-form-id}" method="POST">
+    <label for="name">Nama:</label>
+    <input type="text" id="name" name="name" required="" />
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required="" />
+
+    <label for="message">Pesan:</label>
+    <textarea id="message" name="message" required=""></textarea>
+
+    <button type="submit">Kirim</button>
+</form>
+
+<p>Gantilah {your-form-id} dengan ID formulir Anda dari akun Formspree.</p>
+
+<h4 id="12-mendaftar-di-formspree"><em>1.2. Mendaftar di Formspree</em></h4>
+
+<ul>
+  <li>Buka <a href="https://formspree.io/">Formspree</a> dan buat akun.</li>
+  <li>Setelah masuk, buat formulir baru dan salin ID formulir yang disediakan.</li>
+</ul>
+
+<hr />
+
+<h3 id="2-fitur-utama-formspree"><em>2. Fitur Utama Formspree</em></h3>
+
+<h4 id="21-validasi-data-formulir"><em>2.1. Validasi Data Formulir</em></h4>
+
+<p>Formspree menyediakan validasi data formulir bawaan. Anda dapat menggunakan atribut HTML seperti required untuk memastikan pengguna mengisi semua bidang wajib.</p>
+
+<h4 id="22-dukungan-untuk-ajax"><em>2.2. Dukungan untuk AJAX</em></h4>
+
+<p>Anda dapat mengirim formulir menggunakan AJAX untuk pengalaman pengguna yang lebih baik:</p>
+
+<p>javascript
+const form = document.querySelector(‘form’);
+form.addEventListener(‘submit’, async (event) =&gt; {
+    event.preventDefault();
+    const formData = new FormData(form);</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>const response = await fetch(form.action, {
+    method: form.method,
+    body: formData,
+    headers: {
+        'Accept': 'application/json'
+    }
+});
+
+if (response.ok) {
+    alert('Pesan berhasil dikirim!');
+} else {
+    alert('Terjadi kesalahan. Silakan coba lagi.');
+} });
+</code></pre></div></div>
+
+<h4 id="23-fitur-recaptcha"><em>2.3. Fitur ReCAPTCHA</em></h4>
+
+<p>Formspree mendukung integrasi Google ReCAPTCHA untuk mencegah spam:</p>
+
+<ul>
+  <li>Aktifkan fitur ReCAPTCHA di pengaturan formulir Anda di dashboard Formspree.</li>
+  <li>Tambahkan skrip ReCAPTCHA di file HTML Anda.</li>
+</ul>
+
+<hr />
+
+<h3 id="3-kustomisasi-formspree"><em>3. Kustomisasi Formspree</em></h3>
+
+<h4 id="31-menambahkan-pesan-sukses"><em>3.1. Menambahkan Pesan Sukses</em></h4>
+
+<p>Anda dapat mengarahkan pengguna ke halaman “Terima Kasih” setelah formulir dikirim:</p>
+
+<p>html</p>
+<form action="https://formspree.io/f/{your-form-id}" method="POST">
+    <input type="hidden" name="_redirect" value="https://yourwebsite.com/thank-you" />
+    <!-- Bidang formulir lainnya -->
+    <button type="submit">Kirim</button>
+</form>
+
+<h4 id="32-menangani-error"><em>3.2. Menangani Error</em></h4>
+
+<p>Tambahkan logika untuk menampilkan pesan error jika pengiriman formulir gagal.</p>
+
+<h4 id="33-tambahkan-css-untuk-gaya-kustom"><em>3.3. Tambahkan CSS untuk Gaya Kustom</em></h4>
+
+<p>Gaya formulir Anda agar lebih menarik menggunakan CSS:</p>
+
+<p>css
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}</p>
+
+<p>label {
+    display: block;
+    margin-bottom: 5px;
+}</p>
+
+<p>input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}</p>
+
+<p>button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}</p>
+
+<p>button:hover {
+    background-color: #0056b3;
+}</p>
+
+<hr />
+
+<h3 id="4-keamanan-dengan-formspree"><em>4. Keamanan dengan Formspree</em></h3>
+
+<p>Formspree memberikan beberapa langkah keamanan untuk melindungi data Anda:</p>
+
+<ul>
+  <li><em>Validasi Domain</em>: Batasi pengiriman formulir hanya dari domain tertentu.</li>
+  <li><em>Enkripsi Data</em>: Formspree mengenkripsi semua data yang dikirimkan.</li>
+  <li><em>CAPTCHA</em>: Aktifkan CAPTCHA untuk mencegah spam.</li>
+</ul>
+
+<hr />
+
+<h3 id="5-keuntungan-menggunakan-formspree"><em>5. Keuntungan Menggunakan Formspree</em></h3>
+
+<ul>
+  <li><em>Tidak Memerlukan Backend</em>: Tidak perlu server atau layanan email khusus.</li>
+  <li><em>Mudah Diintegrasikan</em>: Cukup tambahkan URL Formspree ke formulir HTML.</li>
+  <li><em>Gratis untuk Pemula</em>: Paket gratis tersedia untuk penggunaan dasar.</li>
+</ul>
+
+<hr />
+
+<h3 id="6-kesimpulan"><em>6. Kesimpulan</em></h3>
+
+<p>Formspree adalah solusi ideal untuk mengelola pengiriman formulir di situs web tanpa backend. Dengan fitur sederhana dan mudah digunakan, layanan ini cocok untuk pengembang web yang ingin menyelesaikan proyek dengan cepat dan efisien. Dengan integrasi yang baik dan fitur keamanan, Formspree memastikan bahwa data pengguna Anda tetap aman.</p>
+
+ <div class="footer">
+  <p>
+    © 2025, Created <i class="fas fa-heart"></i> by <span>Balqis </span>
+    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+    <a href="https://github.com/balqismisyia" class="social-icon"
+      ><i class="fab fa-github"></i
+    ></a>
+  </p>
+</div>
+
+  </body>
+</html>

@@ -6,7 +6,7 @@ title: Friends
 <div class="friends-container">
   <h1>Friends Page</h1>
   <p>Berikut teman-teman saya di kelas:</p>
-  <ul class="friend-list">
+  <ol class="friend-list">
     <li><a href="https://ahmadfayyadh.github.io/">Ahmad Fayyadh</a></li>
     <li><a href="https://alanisamaharani.github.io/">Al Anisa Maharani</a></li>
     <li><a href="https://alfaizakbar.github.io/">Alfaiz Akbar Thaib</a></li>
@@ -35,5 +35,5 @@ title: Friends
     <li><a href="https://rafi-i-habibi.github.io/">Rafi'i Habibi</a></li>
     <li><a href="https://syahanalfatih.github.io/">Syahan Alfatih</a></li>
     <li><a href="https://addairabi.github.io/">T. Ahmad Addairabi Asyafi'ie</a></li>
-  </ul>
+  </ol>
 </div>
