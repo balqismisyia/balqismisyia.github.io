@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>scss dan sass</title>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="/assets/css/styles.css">
+
+  <!-- Favicon -->
+  <link rel="icon" href="/assets/images/favicon.ico">
+
+  <!-- JavaScript -->
+  <script src="/assets/js/scripts.js"></script>
+
+  <!-- Plugins -->
+  <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Home" />
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>scss dan sass | Home</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="scss dan sass" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="penjelasan tentang SCSS dan SASS" />
+<meta property="og:description" content="penjelasan tentang SCSS dan SASS" />
+<link rel="canonical" href="http://localhost:4000/2025/04/25/scss-dan-sass.html" />
+<meta property="og:url" content="http://localhost:4000/2025/04/25/scss-dan-sass.html" />
+<meta property="og:site_name" content="Home" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-04-25T00:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="scss dan sass" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-04-25T00:00:00-05:00","datePublished":"2025-04-25T00:00:00-05:00","description":"penjelasan tentang SCSS dan SASS","headline":"scss dan sass","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2025/04/25/scss-dan-sass.html"},"url":"http://localhost:4000/2025/04/25/scss-dan-sass.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <img src="/assets/image/bear2.jpg" alt="Profile Picture" class="profile-picture">
+      <h1>Home</h1>
+      <p></p>
+    </header>
+
+    <nav>
+      <nav class="navbar">
+  <div class="nav-container">
+
+    <div class="nav-links">
+      
+        <a href="/" >
+          Home
+        </a>
+      
+        <a href="/friends.html" >
+          Friends
+        </a>
+      
+        <a href="/blog.html" >
+          Blog
+        </a>
+      
+    </div>
+  </div>
+</nav>
+
+    </nav>
+
+    <main>
+      <h1>scss dan sass</h1>
+<p>25 Apr 2025 - </p>
+
+<p>penjelasan tentang SCSS dan SASS</p>
+
+<h2 id="pendahuluan">Pendahuluan</h2>
+
+<p>SCSS (Sassy CSS) dan SASS (Syntactically Awesome Stylesheets) adalah preprocessor CSS yang dirancang untuk meningkatkan produktivitas dan efisiensi dalam penulisan stylesheet. Dengan fitur seperti variabel, nesting, mixins, dan inheritance, SCSS/SASS membantu pengembang menulis kode yang lebih terorganisir, mudah dipelihara, dan dinamis.</p>
+
+<hr />
+
+<h2 id="apa-itu-sass-dan-scss">Apa Itu SASS dan SCSS?</h2>
+
+<ul>
+  <li><em>SASS:</em> Format sintaks original yang lebih ringkas, tanpa kurung kurawal {} dan titik koma ;.</li>
+  <li><em>SCSS:</em> Sintaks modern yang mirip dengan CSS, sehingga lebih ramah bagi pengembang yang sudah familiar dengan CSS.</li>
+</ul>
+
+<h3 id="perbandingan-sintaks">Perbandingan Sintaks:</h3>
+
+<h4 id="sass">SASS:</h4>
+
+<p>sass
+$primary-color: #3498db
+body
+  background-color: $primary-color</p>
+
+<h4 id="scss">SCSS:</h4>
+
+<p>scss
+$primary-color: #3498db;
+body {
+  background-color: $primary-color;
+}</p>
+
+<hr />
+
+<h2 id="manfaat-menggunakan-scsssass">Manfaat Menggunakan SCSS/SASS</h2>
+
+<ol>
+  <li><em>Reusabilitas Kode:</em> Komponen dapat digunakan kembali dengan mixins atau inheritance.</li>
+  <li><em>Fleksibilitas:</em> Mendukung variabel dan operasi matematika.</li>
+  <li><em>Organisasi File:</em> Struktur modular melalui partials dan import.</li>
+  <li><em>Kompatibilitas:</em> File SCSS dikompilasi menjadi CSS standar yang dapat dibaca oleh browser.</li>
+</ol>
+
+<hr />
+
+<h2 id="instalasi-dan-setup">Instalasi dan Setup</h2>
+
+<h3 id="prasyarat">Prasyarat:</h3>
+
+<ul>
+  <li><em>Node.js</em> terinstal di komputer.</li>
+  <li><em>Package Manager</em> seperti npm atau yarn.</li>
+</ul>
+
+<h3 id="langkah-instalasi">Langkah Instalasi:</h3>
+
+<ol>
+  <li>
+    <p>Install SASS secara global:</p>
+
+    <p>bash
+npm install -g sass</p>
+  </li>
+  <li>
+    <p>Verifikasi instalasi:</p>
+
+    <p>bash
+sass –version</p>
+  </li>
+  <li>
+    <p>Kompilasi file SCSS menjadi CSS:</p>
+
+    <p>bash
+sass input.scss output.css</p>
+  </li>
+  <li>
+    <p>Aktifkan mode watch untuk kompilasi otomatis:</p>
+
+    <p>bash
+sass –watch scss:css</p>
+  </li>
+</ol>
+
+<hr />
+
+<h2 id="fitur-utama-scss">Fitur Utama SCSS</h2>
+
+<h3 id="1-variabel">1. Variabel</h3>
+
+<p>Variabel digunakan untuk menyimpan nilai yang sering digunakan, seperti warna, ukuran, atau font:</p>
+
+<p>scss
+$primary-color: #3498db;
+$font-size: 16px;</p>
+
+<p>body {
+  color: $primary-color;
+  font-size: $font-size;
+}</p>
+
+<h3 id="2-nesting">2. Nesting</h3>
+
+<p>Nesting memungkinkan Anda menulis CSS yang bersarang, mencerminkan struktur HTML:</p>
+
+<p>scss
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    li {
+      list-style: none;
+    }
+  }
+}</p>
+
+<h3 id="3-partials-dan-import">3. Partials dan Import</h3>
+
+<p>Gunakan partials untuk memecah kode menjadi file kecil yang dapat diimpor:</p>
+
+<ul>
+  <li>
+    <p>File _variables.scss:</p>
+
+    <p>scss
+$primary-color: #3498db;</p>
+  </li>
+  <li>
+    <p>File main.scss:</p>
+
+    <p>scss
+@import ‘variables’;</p>
+
+    <p>body {
+  color: $primary-color;
+}</p>
+  </li>
+</ul>
+
+<h3 id="4-mixin">4. Mixin</h3>
+
+<p>Mixin adalah blok kode yang dapat digunakan kembali:</p>
+
+<p>scss
+@mixin border-radius($radius) {
+  border-radius: $radius;
+  -webkit-border-radius: $radius;
+}</p>
+
+<p>button {
+  @include border-radius(5px);
+}</p>
+
+<h3 id="5-extendinheritance">5. Extend/Inheritance</h3>
+
+<p>Gunakan inheritance untuk berbagi properti antar selektor:</p>
+
+<p>scss
+%button-style {
+  padding: 10px 20px;
+  font-size: 14px;
+}</p>
+
+<p>.primary-btn {
+  @extend %button-style;
+  background-color: blue;
+}</p>
+
+<p>.secondary-btn {
+  @extend %button-style;
+  background-color: gray;
+}</p>
+
+<h3 id="6-operasi-matematis">6. Operasi Matematis</h3>
+
+<p>SCSS mendukung operasi aritmatika langsung pada nilai:</p>
+
+<p>scss
+$base-padding: 10px;</p>
+
+<p>.container {
+  padding: $base-padding * 2;
+}</p>
+
+<hr />
+
+<h2 id="studi-kasus-membuat-sistem-button-dengan-scss">Studi Kasus: Membuat Sistem Button dengan SCSS</h2>
+
+<h3 id="struktur-folder">Struktur Folder:</h3>
+
+<p>project/
+|– scss/
+|   |– _variables.scss
+|   |– _mixins.scss
+|   |– _buttons.scss
+|   |– styles.scss
+|– css/
+|   |– styles.css
+|– index.html</p>
+
+<h3 id="file-_variablesscss">File _variables.scss:</h3>
+
+<p>scss
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+$font-family: ‘Arial, sans-serif’;</p>
+
+<h3 id="file-_mixinsscss">File _mixins.scss:</h3>
+
+<p>scss
+@mixin transition($property, $duration) {
+  transition: $property $duration;
+}</p>
+
+<h3 id="file-_buttonsscss">File _buttons.scss:</h3>
+
+<p>scss
+@import ‘variables’;
+@import ‘mixins’;</p>
+
+<p>.button {
+  font-family: $font-family;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;</p>
+
+<p>&amp;.primary {
+    background-color: $primary-color;
+    color: #fff;
+    @include transition(all, 0.3s);</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&amp;:hover {
+  background-color: darken($primary-color, 10%);
+}   }
+</code></pre></div></div>
+
+<p>&amp;.secondary {
+    background-color: $secondary-color;
+    color: #fff;
+    @include transition(all, 0.3s);</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&amp;:hover {
+  background-color: darken($secondary-color, 10%);
+}   } }
+</code></pre></div></div>
+
+<h3 id="file-stylesscss">File styles.scss:</h3>
+
+<p>scss
+@import ‘variables’;
+@import ‘mixins’;
+@import ‘buttons’;</p>
+
+<h3 id="file-html">File HTML:</h3>
+
+<p>html
+&lt;!DOCTYPE html&gt;</p>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <title>SCSS Buttons</title>
+</head>
+<body>
+  <button class="button primary">Primary Button</button>
+  <button class="button secondary">Secondary Button</button>
+</body>
+</html>
+
+<hr />
+
+
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Home. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+
+</html>

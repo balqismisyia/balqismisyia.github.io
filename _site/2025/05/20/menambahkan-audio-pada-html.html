@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>menambahkan oudio pada HTML</title>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="/assets/css/styles.css">
+
+  <!-- Favicon -->
+  <link rel="icon" href="/assets/images/favicon.ico">
+
+  <!-- JavaScript -->
+  <script src="/assets/js/scripts.js"></script>
+
+  <!-- Plugins -->
+  <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Home" />
+  <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>menambahkan oudio pada HTML | Home</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="menambahkan oudio pada HTML" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="penjelasan tentang bagaimana cara menambahkan oudio pada html" />
+<meta property="og:description" content="penjelasan tentang bagaimana cara menambahkan oudio pada html" />
+<link rel="canonical" href="http://localhost:4000/2025/05/20/menambahkan-audio-pada-html.html" />
+<meta property="og:url" content="http://localhost:4000/2025/05/20/menambahkan-audio-pada-html.html" />
+<meta property="og:site_name" content="Home" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2025-05-20T00:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="menambahkan oudio pada HTML" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2025-05-20T00:00:00-05:00","datePublished":"2025-05-20T00:00:00-05:00","description":"penjelasan tentang bagaimana cara menambahkan oudio pada html","headline":"menambahkan oudio pada HTML","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/2025/05/20/menambahkan-audio-pada-html.html"},"url":"http://localhost:4000/2025/05/20/menambahkan-audio-pada-html.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <img src="/assets/image/bear2.jpg" alt="Profile Picture" class="profile-picture">
+      <h1>Home</h1>
+      <p></p>
+    </header>
+
+    <nav>
+      <nav class="navbar">
+  <div class="nav-container">
+
+    <div class="nav-links">
+      
+        <a href="/" >
+          Home
+        </a>
+      
+        <a href="/friends.html" >
+          Friends
+        </a>
+      
+        <a href="/blog.html" >
+          Blog
+        </a>
+      
+    </div>
+  </div>
+</nav>
+
+    </nav>
+
+    <main>
+      <h1>menambahkan oudio pada HTML</h1>
+<p>20 May 2025 - </p>
+
+<p>penjelasan tentang bagaimana cara menambahkan oudio pada html</p>
+
+<h4 id="1-dasar-tag-">1. Dasar: Tag <audio></audio></h4>
+<p>Struktur Umum:</p>
+
+<p>html</p>
+<audio controls="">
+  <source src="audio.mp3" type="audio/mpeg" />
+  <source src="audio.ogg" type="audio/ogg" />
+  Your browser does not support the audio element.
+</audio>
+<p>controls akan menampilkan tombol Play, Pause, Volume.</p>
+
+<hr />
+
+<h4 id="2-atribut-penting-pada-">2. Atribut Penting pada <audio></audio></h4>
+<p>Atribut	Fungsi
+controls	Menampilkan kontrol audio standar (play, pause, volume)
+autoplay	Audio otomatis diputar saat halaman dibuka
+loop	Mengulang audio terus-menerus setelah selesai
+muted	Audio dimulai dalam keadaan mute
+preload	Mengatur kapan audio dimuat (auto, metadata, none)</p>
+<ul>
+  <li>Contoh lengkap:</li>
+</ul>
+
+<p>html</p>
+<audio controls="" autoplay="" loop="" muted="" preload="auto">
+  <source src="lagu.mp3" type="audio/mpeg" />
+</audio>
+
+<hr />
+
+<h4 id="3-preload-pada-">3. Preload pada <audio></audio></h4>
+<p>preload mengontrol kapan browser harus mulai mengunduh audio:
+•	auto : Browser memutuskan sendiri.
+•	metadata : Hanya meta informasi (seperti durasi).
+•	none : Tidak memuat audio sebelum user menekan play.</p>
+<ul>
+  <li>Contoh:</li>
+</ul>
+
+<p>html</p>
+<audio controls="" preload="metadata">
+  <source src="musik.mp3" type="audio/mpeg" />
+</audio>
+
+<hr />
+
+<h4 id="4-event-javascript-untuk-">4. Event (JavaScript) untuk <audio></audio></h4>
+<p>Dengan JavaScript, kita bisa mengendalikan audio:</p>
+<ul>
+  <li>Contoh sederhana:</li>
+</ul>
+
+<p>html
+CopyEdit</p>
+<audio id="audioKu" src="lagu.mp3"></audio>
+
+<p><button onclick="playAudio()">Play</button>
+<button onclick="pauseAudio()">Pause</button></p>
+
+<script>
+  var audio = document.getElementById("audioKu");
+  
+  function playAudio() {
+    audio.play();
+  }
+
+  function pauseAudio() {
+    audio.pause();
+  }
+</script>
+
+<p>Event yang tersedia:
+•	play
+•	pause
+•	ended
+•	volumechange
+•	timeupdate
+•	loadeddata</p>
+
+<hr />
+
+<h4 id="5-styling--css">5. Styling <audio> (CSS)</audio></h4>
+<p>Tag <audio> biasanya punya tampilan standar. Tapi bisa dikombinasikan dengan CSS untuk custom player:</audio></p>
+
+<p>html</p>
+<style>
+  audio {
+    width: 300px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 5px;
+  }
+</style>
+
+<audio controls="">
+  <source src="musik.mp3" type="audio/mpeg" />
+</audio>
+<p>Kalau mau full custom player (dengan tombol sendiri), lebih banyak pakai JavaScript + CSS.</p>
+
+<hr />
+
+<h4 id="6-format-audio-yang-didukung-browser">6. Format Audio yang Didukung Browser</h4>
+<p>Format	Tipe MIME	Browser
+MP3	audio/mpeg	Semua browser modern
+OGG	audio/ogg	Chrome, Firefox, Opera
+WAV	audio/wav	Semua browser modern
+⚡ Saran: Utamakan MP3 karena paling kompatibel!</p>
+
+<hr />
+
+<h4 id="7-embed-dari-layanan-streaming">7. Embed dari Layanan Streaming</h4>
+<p>Kalau mau embed dari Spotify atau SoundCloud, biasanya pakai iframe:</p>
+<ul>
+  <li>Contoh Spotify:</li>
+</ul>
+
+<p>html</p>
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/TRACK_ID" width="300" height="80" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+
+<hr />
+
+<h4 id="ringkasan">Ringkasan</h4>
+<ul>
+  <li>Pakai <audio> untuk file lokal.</audio></li>
+  <li>Gunakan controls untuk tombol play, pause, volume.</li>
+  <li>Kombinasikan dengan CSS/JavaScript untuk kontrol lebih lanjut.</li>
+  <li>Format MP3 paling umum dan didukung semua browser.</li>
+  <li>Bisa embed audio dari layanan lain pakai iframe.</li>
+</ul>
+
+
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Home. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+
+</html>

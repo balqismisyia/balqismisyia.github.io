@@ -1,0 +1,884 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-07-03T05:13:22-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Home</title><entry><title type="html">menambahkan oudio pada HTML</title><link href="http://localhost:4000/2025/05/20/menambahkan-audio-pada-html.html" rel="alternate" type="text/html" title="menambahkan oudio pada HTML" /><published>2025-05-20T00:00:00-05:00</published><updated>2025-05-20T00:00:00-05:00</updated><id>http://localhost:4000/2025/05/20/menambahkan%20audio%20pada%20html</id><content type="html" xml:base="http://localhost:4000/2025/05/20/menambahkan-audio-pada-html.html"><![CDATA[<p>penjelasan tentang bagaimana cara menambahkan oudio pada html</p>
+
+<h4 id="1-dasar-tag-">1. Dasar: Tag <audio></audio></h4>
+<p>Struktur Umum:</p>
+
+<p>html</p>
+<audio controls="">
+  <source src="audio.mp3" type="audio/mpeg" />
+  <source src="audio.ogg" type="audio/ogg" />
+  Your browser does not support the audio element.
+</audio>
+<p>controls akan menampilkan tombol Play, Pause, Volume.</p>
+
+<hr />
+
+<h4 id="2-atribut-penting-pada-">2. Atribut Penting pada <audio></audio></h4>
+<p>Atribut	Fungsi
+controls	Menampilkan kontrol audio standar (play, pause, volume)
+autoplay	Audio otomatis diputar saat halaman dibuka
+loop	Mengulang audio terus-menerus setelah selesai
+muted	Audio dimulai dalam keadaan mute
+preload	Mengatur kapan audio dimuat (auto, metadata, none)</p>
+<ul>
+  <li>Contoh lengkap:</li>
+</ul>
+
+<p>html</p>
+<audio controls="" autoplay="" loop="" muted="" preload="auto">
+  <source src="lagu.mp3" type="audio/mpeg" />
+</audio>
+
+<hr />
+
+<h4 id="3-preload-pada-">3. Preload pada <audio></audio></h4>
+<p>preload mengontrol kapan browser harus mulai mengunduh audio:
+•	auto : Browser memutuskan sendiri.
+•	metadata : Hanya meta informasi (seperti durasi).
+•	none : Tidak memuat audio sebelum user menekan play.</p>
+<ul>
+  <li>Contoh:</li>
+</ul>
+
+<p>html</p>
+<audio controls="" preload="metadata">
+  <source src="musik.mp3" type="audio/mpeg" />
+</audio>
+
+<hr />
+
+<h4 id="4-event-javascript-untuk-">4. Event (JavaScript) untuk <audio></audio></h4>
+<p>Dengan JavaScript, kita bisa mengendalikan audio:</p>
+<ul>
+  <li>Contoh sederhana:</li>
+</ul>
+
+<p>html
+CopyEdit</p>
+<audio id="audioKu" src="lagu.mp3"></audio>
+
+<p><button onclick="playAudio()">Play</button>
+<button onclick="pauseAudio()">Pause</button></p>
+
+<script>
+  var audio = document.getElementById("audioKu");
+  
+  function playAudio() {
+    audio.play();
+  }
+
+  function pauseAudio() {
+    audio.pause();
+  }
+</script>
+
+<p>Event yang tersedia:
+•	play
+•	pause
+•	ended
+•	volumechange
+•	timeupdate
+•	loadeddata</p>
+
+<hr />
+
+<h4 id="5-styling--css">5. Styling <audio> (CSS)</audio></h4>
+<p>Tag <audio> biasanya punya tampilan standar. Tapi bisa dikombinasikan dengan CSS untuk custom player:</audio></p>
+
+<p>html</p>
+<style>
+  audio {
+    width: 300px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 5px;
+  }
+</style>
+
+<audio controls="">
+  <source src="musik.mp3" type="audio/mpeg" />
+</audio>
+<p>Kalau mau full custom player (dengan tombol sendiri), lebih banyak pakai JavaScript + CSS.</p>
+
+<hr />
+
+<h4 id="6-format-audio-yang-didukung-browser">6. Format Audio yang Didukung Browser</h4>
+<p>Format	Tipe MIME	Browser
+MP3	audio/mpeg	Semua browser modern
+OGG	audio/ogg	Chrome, Firefox, Opera
+WAV	audio/wav	Semua browser modern
+⚡ Saran: Utamakan MP3 karena paling kompatibel!</p>
+
+<hr />
+
+<h4 id="7-embed-dari-layanan-streaming">7. Embed dari Layanan Streaming</h4>
+<p>Kalau mau embed dari Spotify atau SoundCloud, biasanya pakai iframe:</p>
+<ul>
+  <li>Contoh Spotify:</li>
+</ul>
+
+<p>html</p>
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/TRACK_ID" width="300" height="80" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+
+<hr />
+
+<h4 id="ringkasan">Ringkasan</h4>
+<ul>
+  <li>Pakai <audio> untuk file lokal.</audio></li>
+  <li>Gunakan controls untuk tombol play, pause, volume.</li>
+  <li>Kombinasikan dengan CSS/JavaScript untuk kontrol lebih lanjut.</li>
+  <li>Format MP3 paling umum dan didukung semua browser.</li>
+  <li>Bisa embed audio dari layanan lain pakai iframe.</li>
+</ul>]]></content><author><name></name></author><summary type="html"><![CDATA[penjelasan tentang bagaimana cara menambahkan oudio pada html]]></summary></entry><entry><title type="html">scss dan sass</title><link href="http://localhost:4000/2025/04/25/scss-dan-sass.html" rel="alternate" type="text/html" title="scss dan sass" /><published>2025-04-25T00:00:00-05:00</published><updated>2025-04-25T00:00:00-05:00</updated><id>http://localhost:4000/2025/04/25/scss%20dan%20sass</id><content type="html" xml:base="http://localhost:4000/2025/04/25/scss-dan-sass.html"><![CDATA[<p>penjelasan tentang SCSS dan SASS</p>
+
+<h2 id="pendahuluan">Pendahuluan</h2>
+
+<p>SCSS (Sassy CSS) dan SASS (Syntactically Awesome Stylesheets) adalah preprocessor CSS yang dirancang untuk meningkatkan produktivitas dan efisiensi dalam penulisan stylesheet. Dengan fitur seperti variabel, nesting, mixins, dan inheritance, SCSS/SASS membantu pengembang menulis kode yang lebih terorganisir, mudah dipelihara, dan dinamis.</p>
+
+<hr />
+
+<h2 id="apa-itu-sass-dan-scss">Apa Itu SASS dan SCSS?</h2>
+
+<ul>
+  <li><em>SASS:</em> Format sintaks original yang lebih ringkas, tanpa kurung kurawal {} dan titik koma ;.</li>
+  <li><em>SCSS:</em> Sintaks modern yang mirip dengan CSS, sehingga lebih ramah bagi pengembang yang sudah familiar dengan CSS.</li>
+</ul>
+
+<h3 id="perbandingan-sintaks">Perbandingan Sintaks:</h3>
+
+<h4 id="sass">SASS:</h4>
+
+<p>sass
+$primary-color: #3498db
+body
+  background-color: $primary-color</p>
+
+<h4 id="scss">SCSS:</h4>
+
+<p>scss
+$primary-color: #3498db;
+body {
+  background-color: $primary-color;
+}</p>
+
+<hr />
+
+<h2 id="manfaat-menggunakan-scsssass">Manfaat Menggunakan SCSS/SASS</h2>
+
+<ol>
+  <li><em>Reusabilitas Kode:</em> Komponen dapat digunakan kembali dengan mixins atau inheritance.</li>
+  <li><em>Fleksibilitas:</em> Mendukung variabel dan operasi matematika.</li>
+  <li><em>Organisasi File:</em> Struktur modular melalui partials dan import.</li>
+  <li><em>Kompatibilitas:</em> File SCSS dikompilasi menjadi CSS standar yang dapat dibaca oleh browser.</li>
+</ol>
+
+<hr />
+
+<h2 id="instalasi-dan-setup">Instalasi dan Setup</h2>
+
+<h3 id="prasyarat">Prasyarat:</h3>
+
+<ul>
+  <li><em>Node.js</em> terinstal di komputer.</li>
+  <li><em>Package Manager</em> seperti npm atau yarn.</li>
+</ul>
+
+<h3 id="langkah-instalasi">Langkah Instalasi:</h3>
+
+<ol>
+  <li>
+    <p>Install SASS secara global:</p>
+
+    <p>bash
+npm install -g sass</p>
+  </li>
+  <li>
+    <p>Verifikasi instalasi:</p>
+
+    <p>bash
+sass –version</p>
+  </li>
+  <li>
+    <p>Kompilasi file SCSS menjadi CSS:</p>
+
+    <p>bash
+sass input.scss output.css</p>
+  </li>
+  <li>
+    <p>Aktifkan mode watch untuk kompilasi otomatis:</p>
+
+    <p>bash
+sass –watch scss:css</p>
+  </li>
+</ol>
+
+<hr />
+
+<h2 id="fitur-utama-scss">Fitur Utama SCSS</h2>
+
+<h3 id="1-variabel">1. Variabel</h3>
+
+<p>Variabel digunakan untuk menyimpan nilai yang sering digunakan, seperti warna, ukuran, atau font:</p>
+
+<p>scss
+$primary-color: #3498db;
+$font-size: 16px;</p>
+
+<p>body {
+  color: $primary-color;
+  font-size: $font-size;
+}</p>
+
+<h3 id="2-nesting">2. Nesting</h3>
+
+<p>Nesting memungkinkan Anda menulis CSS yang bersarang, mencerminkan struktur HTML:</p>
+
+<p>scss
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    li {
+      list-style: none;
+    }
+  }
+}</p>
+
+<h3 id="3-partials-dan-import">3. Partials dan Import</h3>
+
+<p>Gunakan partials untuk memecah kode menjadi file kecil yang dapat diimpor:</p>
+
+<ul>
+  <li>
+    <p>File _variables.scss:</p>
+
+    <p>scss
+$primary-color: #3498db;</p>
+  </li>
+  <li>
+    <p>File main.scss:</p>
+
+    <p>scss
+@import ‘variables’;</p>
+
+    <p>body {
+  color: $primary-color;
+}</p>
+  </li>
+</ul>
+
+<h3 id="4-mixin">4. Mixin</h3>
+
+<p>Mixin adalah blok kode yang dapat digunakan kembali:</p>
+
+<p>scss
+@mixin border-radius($radius) {
+  border-radius: $radius;
+  -webkit-border-radius: $radius;
+}</p>
+
+<p>button {
+  @include border-radius(5px);
+}</p>
+
+<h3 id="5-extendinheritance">5. Extend/Inheritance</h3>
+
+<p>Gunakan inheritance untuk berbagi properti antar selektor:</p>
+
+<p>scss
+%button-style {
+  padding: 10px 20px;
+  font-size: 14px;
+}</p>
+
+<p>.primary-btn {
+  @extend %button-style;
+  background-color: blue;
+}</p>
+
+<p>.secondary-btn {
+  @extend %button-style;
+  background-color: gray;
+}</p>
+
+<h3 id="6-operasi-matematis">6. Operasi Matematis</h3>
+
+<p>SCSS mendukung operasi aritmatika langsung pada nilai:</p>
+
+<p>scss
+$base-padding: 10px;</p>
+
+<p>.container {
+  padding: $base-padding * 2;
+}</p>
+
+<hr />
+
+<h2 id="studi-kasus-membuat-sistem-button-dengan-scss">Studi Kasus: Membuat Sistem Button dengan SCSS</h2>
+
+<h3 id="struktur-folder">Struktur Folder:</h3>
+
+<p>project/
+|– scss/
+|   |– _variables.scss
+|   |– _mixins.scss
+|   |– _buttons.scss
+|   |– styles.scss
+|– css/
+|   |– styles.css
+|– index.html</p>
+
+<h3 id="file-_variablesscss">File _variables.scss:</h3>
+
+<p>scss
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+$font-family: ‘Arial, sans-serif’;</p>
+
+<h3 id="file-_mixinsscss">File _mixins.scss:</h3>
+
+<p>scss
+@mixin transition($property, $duration) {
+  transition: $property $duration;
+}</p>
+
+<h3 id="file-_buttonsscss">File _buttons.scss:</h3>
+
+<p>scss
+@import ‘variables’;
+@import ‘mixins’;</p>
+
+<p>.button {
+  font-family: $font-family;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;</p>
+
+<p>&amp;.primary {
+    background-color: $primary-color;
+    color: #fff;
+    @include transition(all, 0.3s);</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&amp;:hover {
+  background-color: darken($primary-color, 10%);
+}   }
+</code></pre></div></div>
+
+<p>&amp;.secondary {
+    background-color: $secondary-color;
+    color: #fff;
+    @include transition(all, 0.3s);</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&amp;:hover {
+  background-color: darken($secondary-color, 10%);
+}   } }
+</code></pre></div></div>
+
+<h3 id="file-stylesscss">File styles.scss:</h3>
+
+<p>scss
+@import ‘variables’;
+@import ‘mixins’;
+@import ‘buttons’;</p>
+
+<h3 id="file-html">File HTML:</h3>
+
+<p>html
+&lt;!DOCTYPE html&gt;</p>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <title>SCSS Buttons</title>
+</head>
+<body>
+  <button class="button primary">Primary Button</button>
+  <button class="button secondary">Secondary Button</button>
+</body>
+</html>
+
+<hr />]]></content><author><name></name></author><summary type="html"><![CDATA[penjelasan tentang SCSS dan SASS]]></summary></entry><entry><title type="html">config.yml</title><link href="http://localhost:4000/2025/04/18/config.yml.html" rel="alternate" type="text/html" title="config.yml" /><published>2025-04-18T00:00:00-05:00</published><updated>2025-04-18T00:00:00-05:00</updated><id>http://localhost:4000/2025/04/18/config.yml</id><content type="html" xml:base="http://localhost:4000/2025/04/18/config.yml.html"><![CDATA[<p>penjelasan tentang config.yml</p>
+
+<h3 id="apa-itu-folder-config">Apa Itu Folder config?</h3>
+<p>File _config.yml dalam Jekyll adalah file konfigurasi utama yang digunakan untuk mengontrol berbagai pengaturan dan perilaku situs web yang sedang dibangun. File ini ditulis dalam format YAML dan berisi berbagai opsi konfigurasi yang mengatur bagaimana Jekyll memproses situs web, termasuk tema, plugin, dan pengaturan lain.</p>
+
+<ul>
+  <li>Konfigurasi Global:
+_config.yml menentukan opsi konfigurasi yang berlaku secara global untuk seluruh situs web. Ini berarti pengaturan dalam file ini dapat diakses dan digunakan di setiap halaman situs Anda.</li>
+  <li>Pengaturan Utama:
+File ini digunakan untuk mengatur berbagai aspek situs web, seperti:
+    <ul>
+      <li>Tema: Menentukan tema yang akan digunakan untuk menentukan tampilan dan gaya situs web.</li>
+      <li>Plugin: Mengaktifkan atau menonaktifkan plugin yang memperluas fungsionalitas Jekyll.</li>
+      <li>Penyorot Kode: Menentukan bagaimana kode akan disorot dalam blok kode di situs web.</li>
+      <li>Penanganan Kesalahan: Mengatur cara Jekyll menangani kesalahan atau pesan diagnostik.</li>
+      <li>Pengaturan yang Dapat Digunakan Kembali:
+Nilai yang diatur dalam _config.yml dapat digunakan kembali di seluruh situs web Anda. Misalnya, judul situs yang ditentukan dalam _config.yml dapat digunakan di templat untuk menambahkan judul ke setiap halaman.</li>
+    </ul>
+  </li>
+  <li>Contoh:
+Kode
+  # _config.yml
+  title: My Awesome Blog
+  description: A simple blog built with Jekyll
+  url: “https://example.com”
+  theme: jekyll-theme-minimal</li>
+  <li>GitHub Pages:
+Dalam konteks GitHub Pages, _config.yml juga digunakan untuk menentukan berbagai opsi konfigurasi situs web yang di-host di GitHub.</li>
+  <li>Modifikasi:
+Anda dapat memodifikasi _config.yml untuk menyesuaikan situs web Anda, seperti mengubah tema, mengaktifkan plugin, atau menyesuaikan perilaku Jekyll.</li>
+</ul>
+
+<p>Folder config pada sebuah web biasanya berfungsi untuk menyimpan semua file konfigurasi yang diperlukan agar aplikasi web bisa berjalan dengan benar dan konsisten. Lebih detailnya, fungsinya bisa meliputi:</p>
+
+<h3 id="1pemisahan-setting-dari-kode-utama">1.Pemisahan Setting dari Kode Utama</h3>
+
+<p>Setting seperti database, API key, nama aplikasi, port server, dan sebagainya dipisahkan ke file di folder config, supaya lebih rapi dan tidak bercampur dengan logika aplikasi.</p>
+
+<h3 id="2memudahkan-perubahan-setting">2.Memudahkan Perubahan Setting</h3>
+
+<p>Kalau perlu ganti database, API key, URL server, atau mode dari development ke production, kamu cukup ubah di satu tempat (file di config) tanpa harus cari-cari di banyak file.</p>
+
+<h3 id="3keamanan">3.Keamanan</h3>
+
+<p>Informasi sensitif seperti password database atau API credentials bisa dikelola lebih aman di file konfigurasi, dan biasanya file itu juga diatur supaya tidak ikut ke version control (misal dengan .gitignore).</p>
+
+<h3 id="4mendukung-multi-environment">4.Mendukung Multi-Environment</h3>
+
+<p>Web kadang jalan di banyak lingkungan (local, staging, production). Folder config bisa berisi setting yang berbeda tergantung lingkungan, misal config/dev.js, config/prod.js, atau config/database.php, dll.</p>
+
+<h3 id="5meningkatkan-skalabilitas">5.Meningkatkan Skalabilitas</h3>
+
+<p>Saat proyek makin besar, butuh banyak pengaturan tambahan (caching, queue, services, dll). Dengan adanya folder config, semuanya tetap tertata dan gampang dikelola.</p>
+
+<p>Kenapa Harus Ada Folder config?</p>
+
+<p>Alasan	Penjelasan Singkat</p>
+<ul>
+  <li>Keteraturan	Memisahkan logika program dari pengaturan teknis.</li>
+  <li>Kemudahan Update	Mau ganti database atau API? Tinggal ubah file di config, nggak perlu ubah seluruh kode.</li>
+  <li>Dukungan Multi-Environment	Bisa punya setting khusus untuk dev, staging, dan production.</li>
+  <li>Keamanan	Data sensitif (seperti API Key) disimpan rapi dan bisa dikunci.</li>
+  <li>Keterbukaan Tim	Developer lain mudah paham cara kerja aplikasi hanya dengan lihat file config.</li>
+</ul>]]></content><author><name></name></author><summary type="html"><![CDATA[penjelasan tentang config.yml]]></summary></entry><entry><title type="html">Fromspree</title><link href="http://localhost:4000/2025/04/01/fromsperee.html" rel="alternate" type="text/html" title="Fromspree" /><published>2025-04-01T00:00:00-05:00</published><updated>2025-04-01T00:00:00-05:00</updated><id>http://localhost:4000/2025/04/01/fromsperee</id><content type="html" xml:base="http://localhost:4000/2025/04/01/fromsperee.html"><![CDATA[<p>penjelasan tentang Formspree</p>
+
+<p>Formspree adalah layanan yang memungkinkan Anda untuk menghubungkan formulir HTML sederhana ke email tanpa perlu menulis kode backend. Dengan Formspree, Anda dapat mengirim data formulir langsung ke alamat email Anda tanpa memerlukan server tambahan atau layanan pengelolaan email yang kompleks. Layanan ini sangat populer untuk proyek kecil, situs portofolio, atau halaman kontak sederhana.</p>
+
+<hr />
+
+<h3 id="1-memulai-dengan-formspree"><em>1. Memulai dengan Formspree</em></h3>
+
+<h4 id="11-membuat-formulir-html"><em>1.1. Membuat Formulir HTML</em></h4>
+
+<p>Untuk menggunakan Formspree, langkah pertama adalah membuat formulir HTML biasa. Contoh formulir dasar:</p>
+
+<p>html</p>
+<form action="https://formspree.io/f/{your-form-id}" method="POST">
+    <label for="name">Nama:</label>
+    <input type="text" id="name" name="name" required="" />
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required="" />
+
+    <label for="message">Pesan:</label>
+    <textarea id="message" name="message" required=""></textarea>
+
+    <button type="submit">Kirim</button>
+</form>
+
+<p>Gantilah {your-form-id} dengan ID formulir Anda dari akun Formspree.</p>
+
+<h4 id="12-mendaftar-di-formspree"><em>1.2. Mendaftar di Formspree</em></h4>
+
+<ul>
+  <li>Buka <a href="https://formspree.io/">Formspree</a> dan buat akun.</li>
+  <li>Setelah masuk, buat formulir baru dan salin ID formulir yang disediakan.</li>
+</ul>
+
+<hr />
+
+<h3 id="2-fitur-utama-formspree"><em>2. Fitur Utama Formspree</em></h3>
+
+<h4 id="21-validasi-data-formulir"><em>2.1. Validasi Data Formulir</em></h4>
+
+<p>Formspree menyediakan validasi data formulir bawaan. Anda dapat menggunakan atribut HTML seperti required untuk memastikan pengguna mengisi semua bidang wajib.</p>
+
+<h4 id="22-dukungan-untuk-ajax"><em>2.2. Dukungan untuk AJAX</em></h4>
+
+<p>Anda dapat mengirim formulir menggunakan AJAX untuk pengalaman pengguna yang lebih baik:</p>
+
+<p>javascript
+const form = document.querySelector(‘form’);
+form.addEventListener(‘submit’, async (event) =&gt; {
+    event.preventDefault();
+    const formData = new FormData(form);</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>const response = await fetch(form.action, {
+    method: form.method,
+    body: formData,
+    headers: {
+        'Accept': 'application/json'
+    }
+});
+
+if (response.ok) {
+    alert('Pesan berhasil dikirim!');
+} else {
+    alert('Terjadi kesalahan. Silakan coba lagi.');
+} });
+</code></pre></div></div>
+
+<h4 id="23-fitur-recaptcha"><em>2.3. Fitur ReCAPTCHA</em></h4>
+
+<p>Formspree mendukung integrasi Google ReCAPTCHA untuk mencegah spam:</p>
+
+<ul>
+  <li>Aktifkan fitur ReCAPTCHA di pengaturan formulir Anda di dashboard Formspree.</li>
+  <li>Tambahkan skrip ReCAPTCHA di file HTML Anda.</li>
+</ul>
+
+<hr />
+
+<h3 id="3-kustomisasi-formspree"><em>3. Kustomisasi Formspree</em></h3>
+
+<h4 id="31-menambahkan-pesan-sukses"><em>3.1. Menambahkan Pesan Sukses</em></h4>
+
+<p>Anda dapat mengarahkan pengguna ke halaman “Terima Kasih” setelah formulir dikirim:</p>
+
+<p>html</p>
+<form action="https://formspree.io/f/{your-form-id}" method="POST">
+    <input type="hidden" name="_redirect" value="https://yourwebsite.com/thank-you" />
+    <!-- Bidang formulir lainnya -->
+    <button type="submit">Kirim</button>
+</form>
+
+<h4 id="32-menangani-error"><em>3.2. Menangani Error</em></h4>
+
+<p>Tambahkan logika untuk menampilkan pesan error jika pengiriman formulir gagal.</p>
+
+<h4 id="33-tambahkan-css-untuk-gaya-kustom"><em>3.3. Tambahkan CSS untuk Gaya Kustom</em></h4>
+
+<p>Gaya formulir Anda agar lebih menarik menggunakan CSS:</p>
+
+<p>css
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}</p>
+
+<p>label {
+    display: block;
+    margin-bottom: 5px;
+}</p>
+
+<p>input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}</p>
+
+<p>button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}</p>
+
+<p>button:hover {
+    background-color: #0056b3;
+}</p>
+
+<hr />
+
+<h3 id="4-keamanan-dengan-formspree"><em>4. Keamanan dengan Formspree</em></h3>
+
+<p>Formspree memberikan beberapa langkah keamanan untuk melindungi data Anda:</p>
+
+<ul>
+  <li><em>Validasi Domain</em>: Batasi pengiriman formulir hanya dari domain tertentu.</li>
+  <li><em>Enkripsi Data</em>: Formspree mengenkripsi semua data yang dikirimkan.</li>
+  <li><em>CAPTCHA</em>: Aktifkan CAPTCHA untuk mencegah spam.</li>
+</ul>
+
+<hr />
+
+<h3 id="5-keuntungan-menggunakan-formspree"><em>5. Keuntungan Menggunakan Formspree</em></h3>
+
+<ul>
+  <li><em>Tidak Memerlukan Backend</em>: Tidak perlu server atau layanan email khusus.</li>
+  <li><em>Mudah Diintegrasikan</em>: Cukup tambahkan URL Formspree ke formulir HTML.</li>
+  <li><em>Gratis untuk Pemula</em>: Paket gratis tersedia untuk penggunaan dasar.</li>
+</ul>
+
+<hr />
+
+<h3 id="6-kesimpulan"><em>6. Kesimpulan</em></h3>
+
+<p>Formspree adalah solusi ideal untuk mengelola pengiriman formulir di situs web tanpa backend. Dengan fitur sederhana dan mudah digunakan, layanan ini cocok untuk pengembang web yang ingin menyelesaikan proyek dengan cepat dan efisien. Dengan integrasi yang baik dan fitur keamanan, Formspree memastikan bahwa data pengguna Anda tetap aman.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[penjelasan tentang Formspree]]></summary></entry><entry><title type="html">HTML: Link dan List</title><link href="http://localhost:4000/2025/03/20/html-link-dan-list.html" rel="alternate" type="text/html" title="HTML: Link dan List" /><published>2025-03-20T00:00:00-05:00</published><updated>2025-03-20T00:00:00-05:00</updated><id>http://localhost:4000/2025/03/20/html-link-dan-list</id><content type="html" xml:base="http://localhost:4000/2025/03/20/html-link-dan-list.html"><![CDATA[<p>Materi tentang link dan lists pada HTML</p>
+
+<h1 id="link-dan-list-dalam-html-">Link dan List dalam HTML 🔗</h1>
+
+<p>HTML adalah bahasa dasar yang digunakan untuk membuat website, dan di dalamnya terdapat elemen-elemen seperti <strong>link</strong> dan <strong>list</strong> yang sangat berguna.</p>
+
+<h2 id="tautan-link-️">Tautan (Link) 🖇️:</h2>
+
+<p>Tautan digunakan untuk menghubungkan halaman-halaman di dalam website atau bahkan ke situs luar. Berikut cara membuat tautan di HTML:</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"https://www.google.com"</span> <span class="na">target=</span><span class="s">"_blank"</span><span class="nt">&gt;</span>Klik di sini untuk Google<span class="nt">&lt;/a&gt;</span>
+</code></pre></div></div>
+
+<ul>
+  <li><strong><code class="language-plaintext highlighter-rouge">target="_blank"</code></strong> akan membuka tautan di tab baru.</li>
+</ul>
+
+<h2 id="daftar-list-">Daftar (List) 📜:</h2>
+
+<p>HTML juga memungkinkan kamu untuk membuat daftar, baik berurutan maupun tidak berurutan.</p>
+
+<ul>
+  <li>
+    <p><strong>Daftar Tidak Berurutan</strong> (bullets):</p>
+
+    <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;ul&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Item pertama<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Item kedua<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Item ketiga<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p><strong>Daftar Berurutan</strong> (nomor):</p>
+    <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;ol&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Langkah pertama<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Langkah kedua<span class="nt">&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;</span>Langkah ketiga<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ol&gt;</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h2 id="menambahkan-tautan-ke-daftar">Menambahkan Tautan ke Daftar:</h2>
+
+<p>Kamu bisa juga menambahkan tautan di dalam daftar untuk membuat menu atau daftar isi.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;ul&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#section1"</span><span class="nt">&gt;</span>Bagian 1<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#section2"</span><span class="nt">&gt;</span>Bagian 2<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#section3"</span><span class="nt">&gt;</span>Bagian 3<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+</code></pre></div></div>]]></content><author><name></name></author><summary type="html"><![CDATA[Materi tentang link dan lists pada HTML]]></summary></entry><entry><title type="html">Layout dan Navigasi</title><link href="http://localhost:4000/2025/03/13/layout-dan-navigation.html" rel="alternate" type="text/html" title="Layout dan Navigasi" /><published>2025-03-13T00:00:00-05:00</published><updated>2025-03-13T00:00:00-05:00</updated><id>http://localhost:4000/2025/03/13/layout-dan-navigation</id><content type="html" xml:base="http://localhost:4000/2025/03/13/layout-dan-navigation.html"><![CDATA[<p>Materi tentang Layout dan Navigasi</p>
+
+<h1 id="layout-dan-navigasi-️">Layout dan Navigasi 🖥️</h1>
+
+<p>Layout di Jekyll digunakan untuk membuat struktur halaman yang konsisten di seluruh situs. Layout ini memungkinkan kamu mengatur header, footer, dan elemen lainnya di seluruh halaman blog kamu.</p>
+
+<h2 id="menyiapkan-layout">Menyiapkan Layout:</h2>
+
+<ol>
+  <li>
+    <p><strong>File <code class="language-plaintext highlighter-rouge">_layouts/default.html</code></strong> adalah template dasar yang akan digunakan oleh halaman lain. Berikut adalah contoh layout untuk halaman utama dengan navigasi:</p>
+
+    <p>```html
+&lt;!DOCTYPE html&gt;</p>
+    <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout dan Navigasi</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/blog">Blog</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main><h1>Belajar Markdown &amp; HTML</h1>
+</main></body></html>
+  </li>
+</ol>
+<p>06 Mar 2025 - </p>
+
+<p>Materi tentang Markdown dan HTML</p>
+
+<h1 id="belajar-markdown-dan-html-">Belajar Markdown dan HTML 📚</h1>
+
+<p>Markdown adalah bahasa penulisan teks yang ringan dan digunakan di banyak platform seperti GitHub dan Jekyll. Dengan Markdown, kamu bisa menulis konten yang mudah dibaca dan otomatis diubah menjadi HTML.</p>
+
+<h2 id="struktur-markdown-dasar">Struktur Markdown Dasar:</h2>
+<ul>
+  <li><strong>Heading</strong>:
+    <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gh"># Heading 1</span>
+<span class="gu">## Heading 2</span>
+<span class="gu">### Heading 3</span>
+</code></pre></div>    </div>
+  </li>
+  <li><strong>Paragraf</strong>: Cukup ketik teks biasa untuk membuat paragraf.
+    <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Ini adalah paragraf pertama saya.
+</code></pre></div>    </div>
+  </li>
+  <li><strong>Daftar</strong>:
+    <ul>
+      <li>Daftar tidak berurutan:
+```markdown
+        <ul>
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3
+```</li>
+        </ul>
+      </li>
+      <li>Daftar berurutan:
+```markdown
+        <ol>
+          <li>Langkah pertama</li>
+          <li>Langkah kedua</li>
+          <li>Langkah ketiga
+```</li>
+        </ol>
+      </li>
+    </ul>
+  </li>
+  <li><strong>Tautan</strong>: Menambahkan tautan sangat mudah dengan Markdown.
+    <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">[</span><span class="nv">Google</span><span class="p">](</span><span class="sx">https://www.google.com</span><span class="p">)</span>
+</code></pre></div>    </div>
+  </li>
+  <li><strong>Gambar</strong>:
+    <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">![</span><span class="nv">Alt Text</span><span class="p">](</span><span class="sx">https://linkgambar.com/gambar.jpg</span><span class="p">)</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h2 id="keuntungan-menggunakan-markdown">Keuntungan Menggunakan Markdown:</h2>
+<ul>
+  <li><strong>Ringan dan mudah dipelajari</strong>: Cukup dengan simbol dasar seperti <code class="language-plaintext highlighter-rouge">#</code> untuk heading dan <code class="language-plaintext highlighter-rouge">-</code> untuk list.</li>
+  <li><strong>Berguna untuk blog</strong>: Markdown memudahkan pembuatan artikel yang dapat langsung diproses menjadi HTML.</li>
+</ul>
+
+<p>&lt;/main&gt;</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   &lt;footer&gt;
+     &lt;p&gt;&amp;copy; 2025 Balqis Misyia&lt;/p&gt;
+   &lt;/footer&gt;
+ &lt;/body&gt;
+</code></pre></div></div>
+<p>&lt;/html&gt;
+   ```</p>
+
+<ol>
+  <li><strong>Navigasi</strong>:
+Navigasi adalah bagian penting dari setiap website. Di atas, kita sudah membuat navigasi dasar menggunakan <code class="language-plaintext highlighter-rouge">&lt;ul&gt;</code> untuk daftar tautan.</li>
+</ol>
+
+<h2 id="menambahkan-halaman">Menambahkan Halaman:</h2>
+
+<ul>
+  <li><strong>About Page</strong>: Buat halaman <code class="language-plaintext highlighter-rouge">about.md</code> dengan konten tentang kamu, dan Jekyll akan otomatis menghubungkannya dengan navigasi.</li>
+</ul>
+
+<h2 id="tips">Tips:</h2>
+
+<ul>
+  <li>Jangan lupa untuk menambahkan CSS di file <code class="language-plaintext highlighter-rouge">assets/css/style.css</code> agar tampilan lebih menarik.</li>
+  <li>Gunakan <strong>partials</strong> untuk elemen yang sering muncul seperti header dan footer, supaya kamu tidak perlu menulis kode yang sama berulang-ulang.</li>
+</ul>]]></content><author><name></name></author><summary type="html"><![CDATA[Materi tentang Layout dan Navigasi]]></summary></entry><entry><title type="html">Belajar Markdown &amp;amp; HTML</title><link href="http://localhost:4000/2025/03/06/markdown-html.html" rel="alternate" type="text/html" title="Belajar Markdown &amp;amp; HTML" /><published>2025-03-06T00:00:00-06:00</published><updated>2025-03-06T00:00:00-06:00</updated><id>http://localhost:4000/2025/03/06/markdown-html</id><content type="html" xml:base="http://localhost:4000/2025/03/06/markdown-html.html"><![CDATA[<p>Materi tentang Markdown dan HTML</p>
+
+<h1 id="belajar-markdown-dan-html-">Belajar Markdown dan HTML 📚</h1>
+
+<p>Markdown adalah bahasa penulisan teks yang ringan dan digunakan di banyak platform seperti GitHub dan Jekyll. Dengan Markdown, kamu bisa menulis konten yang mudah dibaca dan otomatis diubah menjadi HTML.</p>
+
+<h2 id="struktur-markdown-dasar">Struktur Markdown Dasar:</h2>
+<ul>
+  <li><strong>Heading</strong>:
+    <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gh"># Heading 1</span>
+<span class="gu">## Heading 2</span>
+<span class="gu">### Heading 3</span>
+</code></pre></div>    </div>
+  </li>
+  <li><strong>Paragraf</strong>: Cukup ketik teks biasa untuk membuat paragraf.
+    <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Ini adalah paragraf pertama saya.
+</code></pre></div>    </div>
+  </li>
+  <li><strong>Daftar</strong>:
+    <ul>
+      <li>Daftar tidak berurutan:
+```markdown
+        <ul>
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3
+```</li>
+        </ul>
+      </li>
+      <li>Daftar berurutan:
+```markdown
+        <ol>
+          <li>Langkah pertama</li>
+          <li>Langkah kedua</li>
+          <li>Langkah ketiga
+```</li>
+        </ol>
+      </li>
+    </ul>
+  </li>
+  <li><strong>Tautan</strong>: Menambahkan tautan sangat mudah dengan Markdown.
+    <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">[</span><span class="nv">Google</span><span class="p">](</span><span class="sx">https://www.google.com</span><span class="p">)</span>
+</code></pre></div>    </div>
+  </li>
+  <li><strong>Gambar</strong>:
+    <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">![</span><span class="nv">Alt Text</span><span class="p">](</span><span class="sx">https://linkgambar.com/gambar.jpg</span><span class="p">)</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h2 id="keuntungan-menggunakan-markdown">Keuntungan Menggunakan Markdown:</h2>
+<ul>
+  <li><strong>Ringan dan mudah dipelajari</strong>: Cukup dengan simbol dasar seperti <code class="language-plaintext highlighter-rouge">#</code> untuk heading dan <code class="language-plaintext highlighter-rouge">-</code> untuk list.</li>
+  <li><strong>Berguna untuk blog</strong>: Markdown memudahkan pembuatan artikel yang dapat langsung diproses menjadi HTML.</li>
+</ul>]]></content><author><name></name></author><summary type="html"><![CDATA[Materi tentang Markdown dan HTML]]></summary></entry><entry><title type="html">Instalasi Ruby dan Jekyll</title><link href="http://localhost:4000/2025/02/20/installasi-ruby-dan-jekyll.html" rel="alternate" type="text/html" title="Instalasi Ruby dan Jekyll" /><published>2025-02-20T00:00:00-06:00</published><updated>2025-02-20T00:00:00-06:00</updated><id>http://localhost:4000/2025/02/20/installasi-ruby-dan-jekyll</id><content type="html" xml:base="http://localhost:4000/2025/02/20/installasi-ruby-dan-jekyll.html"><![CDATA[<p>Materi tentang Instalasi Ruby dan Jekyll</p>
+
+<h1 id="instalasi-ruby-dan-jekyll-️">Instalasi Ruby dan Jekyll 🛠️</h1>
+
+<p>Untuk memulai membuat blog menggunakan Jekyll, pastikan kamu sudah menginstal Ruby dan Jekyll di komputer kamu. Jekyll adalah sebuah static site generator yang memungkinkan kamu membuat blog atau website tanpa perlu menggunakan database.</p>
+
+<h2 id="langkah-1-instalasi-ruby-">Langkah 1: Instalasi Ruby 📦</h2>
+<ul>
+  <li><strong>Windows</strong>: Kamu bisa mengunduh Ruby menggunakan <a href="https://rubyinstaller.org/">RubyInstaller</a>. Ikuti petunjuk untuk menginstal Ruby di komputer kamu.</li>
+  <li><strong>macOS/Linux</strong>: Kamu bisa menginstal Ruby dengan menggunakan Homebrew di macOS atau menggunakan package manager di Linux. Jalankan perintah berikut di terminal:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>brew <span class="nb">install </span>ruby
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h2 id="langkah-2-instalasi-jekyll-">Langkah 2: Instalasi Jekyll 🚀</h2>
+<p>Setelah Ruby terinstal, langkah selanjutnya adalah menginstal Jekyll. Untuk menginstalnya, buka terminal dan jalankan perintah berikut:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>gem <span class="nb">install </span>jekyll bundler
+</code></pre></div></div>
+<p>Perintah ini akan menginstal Jekyll dan Bundler, yang berguna untuk mengelola dependensi dalam proyek Jekyll kamu.</p>
+
+<h2 id="langkah-3-membuat-proyek-jekyll-baru-">Langkah 3: Membuat Proyek Jekyll Baru 💻</h2>
+<p>Setelah instalasi selesai, kamu bisa membuat proyek baru dengan perintah berikut:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jekyll new nama-proyek
+<span class="nb">cd </span>nama-proyek
+jekyll serve
+</code></pre></div></div>
+<p>Proyek baru kamu sekarang sudah bisa diakses di <code class="language-plaintext highlighter-rouge">http://localhost:4000</code> di browser. Jika berhasil, kamu akan melihat halaman depan website Jekyll yang sudah siap digunakan.</p>
+
+<h2 id="masalah-umum">Masalah Umum:</h2>
+<ul>
+  <li><strong>Jika mendapat error</strong>: Pastikan Ruby dan Jekyll sudah terinstal dengan benar. Jika perlu, coba update Ruby atau periksa kompatibilitas versi.</li>
+  <li><strong>Solusi jika error</strong>: Jika masalah berlanjut, kamu bisa mencari bantuan di <a href="https://talk.jekyllrb.com/">forum Jekyll</a>.</li>
+</ul>]]></content><author><name></name></author><summary type="html"><![CDATA[Materi tentang Instalasi Ruby dan Jekyll]]></summary></entry></feed>
