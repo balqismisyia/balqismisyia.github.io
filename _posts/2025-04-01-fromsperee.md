@@ -150,7 +150,7 @@ Formspree memberikan beberapa langkah keamanan untuk melindungi data Anda:
 * *Enkripsi Data*: Formspree mengenkripsi semua data yang dikirimkan.
 * *CAPTCHA*: Aktifkan CAPTCHA untuk mencegah spam.
 
----
+ ---
 
 ### *5. Keuntungan Menggunakan Formspree*
 

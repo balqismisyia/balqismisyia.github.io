@@ -50,7 +50,7 @@ Format yang sering dipakai:
 •	WebM (video/webm)
 •	Ogg (video/ogg)
 
----
+ ---
 
 #### 4. Embed Video dari YouTube, Vimeo, dll.
 Kalau mau menyisipkan video dari YouTube (atau platform lain), pakai <iframe>:

@@ -13,11 +13,11 @@ Markdown adalah bahasa penulisan teks yang ringan dan digunakan di banyak platfo
 
 ## Struktur Markdown Dasar:
 - **Heading**:
-  ```markdown
+   ```markdown
   # Heading 1
   ## Heading 2
   ### Heading 3
-  ```
+   ```
 
 - **Paragraf**: Cukup ketik teks biasa untuk membuat paragraf.
   ```markdown

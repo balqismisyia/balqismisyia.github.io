@@ -3,7 +3,7 @@ layout: post
 title: "scss dan sass"
 ---
 
-penjelasan tentang SCSS dan SASS
+ penjelasan tentang SCSS dan SASS
 
 ## Pendahuluan
 

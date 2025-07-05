@@ -83,7 +83,7 @@ Event yang tersedia:
 
 
 
----
+ ---
 
 #### 5. Styling <audio> (CSS)
 Tag <audio> biasanya punya tampilan standar. Tapi bisa dikombinasikan dengan CSS untuk custom player:

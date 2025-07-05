@@ -14,9 +14,9 @@ Untuk memulai membuat blog menggunakan Jekyll, pastikan kamu sudah menginstal Ru
 ## Langkah 1: Instalasi Ruby 📦
 - **Windows**: Kamu bisa mengunduh Ruby menggunakan [RubyInstaller](https://rubyinstaller.org/). Ikuti petunjuk untuk menginstal Ruby di komputer kamu.
 - **macOS/Linux**: Kamu bisa menginstal Ruby dengan menggunakan Homebrew di macOS atau menggunakan package manager di Linux. Jalankan perintah berikut di terminal:
-  ```bash
+   ```bash
   brew install ruby
-  ```
+   ```
 
 ## Langkah 2: Instalasi Jekyll 🚀
 Setelah Ruby terinstal, langkah selanjutnya adalah menginstal Jekyll. Untuk menginstalnya, buka terminal dan jalankan perintah berikut:

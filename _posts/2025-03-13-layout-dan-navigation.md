@@ -14,7 +14,7 @@ Layout di Jekyll digunakan untuk membuat struktur halaman yang konsisten di selu
 
 1. **File `_layouts/default.html`** adalah template dasar yang akan digunakan oleh halaman lain. Berikut adalah contoh layout untuk halaman utama dengan navigasi:
 
-   ```html
+    ```html
    <!DOCTYPE html>
    <html lang="en">
      <head>
@@ -40,7 +40,7 @@ Layout di Jekyll digunakan untuk membuat struktur halaman yang konsisten di selu
        </footer>
      </body>
    </html>
-   ```
+    ```
 
 2. **Navigasi**:
    Navigasi adalah bagian penting dari setiap website. Di atas, kita sudah membuat navigasi dasar menggunakan `<ul>` untuk daftar tautan.

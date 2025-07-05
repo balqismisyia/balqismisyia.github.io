@@ -14,7 +14,7 @@ HTML adalah bahasa dasar yang digunakan untuk membuat website, dan di dalamnya t
 
 Tautan digunakan untuk menghubungkan halaman-halaman di dalam website atau bahkan ke situs luar. Berikut cara membuat tautan di HTML:
 
-```html
+ ```html
 <a href="https://www.google.com" target="_blank">Klik di sini untuk Google</a>
 ```
 
